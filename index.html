@@ -1,102 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Fapespa | Produtos</title>
+  <meta name="description" content="Acesse publicações, indicadores e plataformas digitais produzidas pela Fapespa para conhecer o Pará.">
+  <meta name="theme-color" content="#143c2b">
+  <meta property="og:title" content="Portal de Dados e Produtos | Fapespa">
+  <meta property="og:description" content="Publicações, indicadores e plataformas digitais para conhecer o Pará.">
+  <title>Portal de Dados e Produtos | Fapespa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div>
-        <span class="brand-kicker">Fapespa</span>
-        <strong>Portal de Produtos Institucionais</strong>
-      </div>
-      <nav class="topnav">
-        <a href="#home">Home</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#fapespa">Fapespa</a>
-        <a href="#detgi">DETGI</a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="institutional-bar"><div class="container bar-inner">
+      <span>Fundação Amazônia de Amparo a Estudos e Pesquisas</span>
+      <a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer">Governo do Pará · Site institucional ↗</a>
+    </div></div>
+    <div class="navigation-bar"><div class="container navigation-inner">
+      <a class="brand" href="#inicio" aria-label="Fapespa — voltar ao início">
+        <img src="assets/fapespa-logo.png" width="188" height="103" alt="Fapespa">
+        <span class="portal-name">Portfólio <strong>digital</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-icon" aria-hidden="true"></span><span>Menu</span>
+      </button>
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Plataformas</a>
+        <a href="#institucional">A Fundação</a>
+        <a href="#contato">Contato</a>
       </nav>
-    </div>
+    </div></div>
   </header>
 
-  <main>
-    <section class="hero-simple" id="home">
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Dados públicos · território paraense</span>
+          <h1 id="hero-title">O Pará em dados.<br><em>Conhecimento para transformar.</em></h1>
+          <p>Publicações e plataformas digitais que traduzem a realidade social, econômica e ambiental dos 144 municípios paraenses.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#produtos">Explorar plataformas <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer a Fapespa ↗</a>
+          </div>
+          <div class="hero-topics" aria-label="Temas disponíveis">
+            <span>Economia</span><span>Sociedade</span><span>Território</span><span>Meio ambiente</span>
+          </div>
+        </div>
+        <aside class="territory-board" aria-label="Acesso rápido às plataformas">
+          <div class="territory-art" aria-hidden="true">
+            <span class="coordinates">01° 27' S · 48° 30' O</span>
+            <span class="territory-word">PARÁ</span>
+            <div class="data-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="municipal-count"><b>144</b> municípios</span>
+          </div>
+          <div class="quick-products">
+            <a href="https://anuario-avx.pages.dev/" target="_blank" rel="noopener noreferrer">
+              <span>01</span><span><small>Indicadores e séries</small><strong>Anuário Estatístico</strong></span><b>↗</b>
+            </a>
+            <a href="https://radar2025.pages.dev/" target="_blank" rel="noopener noreferrer">
+              <span>02</span><span><small>Mapas e território</small><strong>Radar</strong></span><b>↗</b>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produtos" aria-labelledby="products-title">
       <div class="container">
-        <h1>Portal de Produtos Institucionais</h1>
-        <p>
-          Página simplificada para acesso rápido aos principais produtos da Fapespa,
-          com informações institucionais sobre a Fundação e sobre a DETGI.
-        </p>
+        <header class="section-heading">
+          <div><span class="section-index">01 — Plataformas</span><h2 id="products-title">Do indicador ao território</h2></div>
+          <p>Duas experiências complementares para consultar, compreender e aplicar informações sobre o Pará.</p>
+        </header>
+        <div class="product-showcase">
+          <article class="product-row anuario-product">
+            <div class="product-visual" aria-hidden="true">
+              <span class="visual-label">Publicação estatística</span>
+              <div class="visual-title"><small>PARÁ</small><strong>Anuário<br>Estatístico</strong></div>
+              <div class="visual-chart"><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="visual-code">FAPESPA · SÉRIES · INDICADORES</span>
+            </div>
+            <div class="product-copy">
+              <span class="product-number">01 / 02</span>
+              <h3>Anuário Estatístico do Pará</h3>
+              <p>Uma leitura ampla do estado em indicadores sociais, econômicos, demográficos e ambientais, organizada para consulta por tema e território.</p>
+              <div class="feature-line"><span>Séries históricas</span><span>144 municípios</span><span>Tabelas e mapas</span></div>
+              <a class="product-link" href="https://anuario-avx.pages.dev/" target="_blank" rel="noopener noreferrer">
+                Abrir Anuário <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span>
+              </a>
+            </div>
+          </article>
+          <article class="product-row radar-product">
+            <div class="product-visual" aria-hidden="true">
+              <span class="visual-label">Inteligência territorial</span>
+              <div class="radar-rings"><i></i><i></i><i></i><b></b></div>
+              <div class="visual-title"><small>MAPAS</small><strong>Radar</strong></div>
+              <span class="visual-code">REGIÕES · CAMADAS · ANÁLISE</span>
+            </div>
+            <div class="product-copy">
+              <span class="product-number">02 / 02</span>
+              <h3>Radar</h3>
+              <p>Dados territoriais convertidos em mapas temáticos interativos para revelar padrões, comparar regiões e apoiar análises públicas.</p>
+              <div class="feature-line"><span>Mapas interativos</span><span>Recortes regionais</span><span>Leitura visual</span></div>
+              <a class="product-link" href="https://radar2025.pages.dev/" target="_blank" rel="noopener noreferrer">
+                Abrir Radar <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span>
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="container section section-products" id="produtos">
-      <h2 class="section-title">Produtos</h2>
-      <div class="cards-grid">
-        <article class="simple-card simple-card-anuario">
-          <h3>Anuário Estatístico</h3>
-          <p>Publicação com indicadores socioeconômicos e ambientais do Pará.</p>
-          <a href="https://anuario-avx.pages.dev/" target="_blank" rel="noreferrer">Acessar</a>
-        </article>
-
-        <article class="simple-card simple-card-radar">
-          <h3>Radar</h3>
-          <p>Ambiente para visualização de dados territoriais e regionais.</p>
-          <a href="https://radar2025.pages.dev/" target="_blank" rel="noreferrer">Acessar</a>
-        </article>
-        
-        <!-- Bloco do site PIB removido temporariamente a pedido do mantenedor -->
+    <section class="section institutional-section" id="institucional" aria-labelledby="institutional-title">
+      <div class="container">
+        <header class="institutional-heading">
+          <div><span class="section-index">02 — A Fundação</span><h2 id="institutional-title">Informação pública como infraestrutura para o desenvolvimento</h2></div>
+          <p>A Fapespa articula ciência, tecnologia e produção de conhecimento para apoiar políticas públicas e aproximar a realidade paraense da sociedade.</p>
+        </header>
+        <div class="audience-grid">
+          <article><span>G</span><h3>Gestão pública</h3><p>Evidências para planejar, monitorar e orientar decisões nos territórios.</p></article>
+          <article><span>P</span><h3>Pesquisa</h3><p>Séries e recortes para estudos acadêmicos e produção científica.</p></article>
+          <article><span>S</span><h3>Sociedade</h3><p>Informação acessível para conhecer e acompanhar o desenvolvimento do Pará.</p></article>
+        </div>
+        <div class="institutional-note">
+          <span>FAPESPA · PARÁ · AMAZÔNIA</span>
+          <p>Conhecer o território é o primeiro passo para transformá-lo.</p>
+          <a class="text-link" href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer">Sobre a Fapespa ↗</a>
+        </div>
       </div>
     </section>
 
-    <section class="container section section-fapespa" id="fapespa">
-      <h2 class="section-title">O que é a Fapespa</h2>
-      <div class="info-block">
-        <p>
-          A Fundação Amazônia de Amparo a Estudos e Pesquisas (Fapespa) é uma instituição
-          do Governo do Estado do Pará voltada ao fomento da ciência, tecnologia e inovação,
-          além da produção de estudos e informações para subsidiar políticas públicas.
-        </p>
-        <p>
-          Na página institucional "Sobre Nós", a Fundação informa sua origem em 2007 e
-          destaca sua evolução administrativa, consolidando-se como órgão estratégico para
-          o desenvolvimento econômico, social e ambiental do Pará.
-        </p>
-      </div>
-    </section>
-
-    <section class="container section section-detgi" id="detgi">
-      <h2 class="section-title">Sobre a DETGI</h2>
-      <div class="info-block">
-        <p>
-          A Diretoria de Estatística e de Tecnologia e Gestão da Informação (DETGI)
-          elabora estudos, relatórios e sistemas web que apoiam a gestão pública e
-          a sociedade com dados e análises técnicas.
-        </p>
-        <p>
-          Conforme a seção da DETGI no Anuário 2024, a diretoria atua no acompanhamento
-          de indicadores socioeconômicos e ambientais, com foco na transparência e no
-          planejamento de políticas públicas em escala municipal e regional.
-        </p>
-        <p>
-          A estrutura inclui, entre outras áreas, a CEECR (com atuação no cálculo do PIB)
-          e a CEDI (responsável por produtos como o Anuário e outros sistemas de disseminação).
-        </p>
-      </div>
-    </section>
+    <section class="cta-section"><div class="container cta-box">
+      <div><span class="eyebrow">Ecossistema Fapespa</span><h2>Pesquisa, fomento e informação em um só lugar.</h2>
+      <p>Acesse notícias, editais, publicações e serviços no portal institucional.</p></div>
+      <a class="button button-light" href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer">Visitar portal institucional ↗</a>
+    </div></section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <strong>FAPESPA</strong>
-      <span>Portal de Produtos Institucionais</span>
+  <footer class="site-footer" id="contato">
+    <div class="container footer-grid">
+      <div class="footer-brand"><strong>FAPESPA</strong><p>Fundação Amazônia de Amparo a Estudos e Pesquisas</p></div>
+      <div class="footer-column"><h2>Portal</h2><a href="#produtos">Produtos digitais</a><a href="#institucional">Sobre a instituição</a><a href="https://www.fapespa.pa.gov.br/" target="_blank" rel="noopener noreferrer">Site institucional</a></div>
+      <div class="footer-column"><h2>Atendimento</h2><address>Av. Presidente Vargas, nº 670<br>Campina, Belém — PA<br>CEP 66017-000</address><a href="tel:+559131101150">(91) 3110-1150</a></div>
     </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Fapespa. Governo do Estado do Pará.</span><span>Informação pública para o desenvolvimento.</span></div>
   </footer>
 
 </body>
